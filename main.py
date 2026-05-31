@@ -330,7 +330,7 @@ def old_clone():
         old_Tow()
     elif _input in ('3', 'c', '03', '3'):
         old_Tree()
-    elif _input in ('4', 'd', '04', '4')
+    elif _input in ('4', 'd', '04', '4'):
         old_Four()
     else:
         print(f"\n[×]{rad} Choose Value Option... ")
