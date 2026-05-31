@@ -558,7 +558,7 @@ def old_Four():
     print(f"\x1b[38;5;196m╰───────────────────────────────\x1b[0m")
     limit = input(f"\x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mTOTAL ID COUNT {Y}:{G} ")
     linex()
-    prefixs = ['10001', '10002']
+    prefixes = ['10001', '10002']
     for _ in range(int(limit)):
         suffix = ''.join(random.choices('0123456789', k=10))
         uid = prefix + suffix
