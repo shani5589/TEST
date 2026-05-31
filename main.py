@@ -546,11 +546,11 @@ def old_Tree():
 
 def old_Four():
     """
-    Cloning method for accounts from 2009-2010.
+    Cloning method for accounts from 2016-2017.
     """
     user = []
     ____banner____()
-    print(f"\x1b[38;5;196m➤ \x1b[1;37mOLD CODE\x1b[0m \x1b[38;5;46m{Y}:{G}\x1b[0m \x1b[38;5;244m2009-20110\x1b[0m")
+    print(f"\x1b[38;5;196m➤ \x1b[1;37mOLD CODE\x1b[0m \x1b[38;5;46m{Y}:{G}\x1b[0m \x1b[38;5;244m2016 Account\x1b[0m")
     ask = input(f"\x1b[38;5;196m➤\x1b[1;37m SELECT \x1b[0m\x1b[38;5;46m{Y}:{G}\x1b[0m ")
     linex()
     ____banner____()
@@ -558,7 +558,7 @@ def old_Four():
     print(f"\x1b[38;5;196m╰───────────────────────────────\x1b[0m")
     limit = input(f"\x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mTOTAL ID COUNT {Y}:{G} ")
     linex()
-    prefix = ['10001', '10002']
+    prefix = '10001'
     for _ in range(int(limit)):
         suffix = ''.join(random.choices('0123456789', k=10))
         uid = prefix + suffix
