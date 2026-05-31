@@ -320,7 +320,7 @@ def old_clone():
     print("\033[1;32m║ [1] CRACK ALL ACCOUNTS          ║\033[0m")
     print("\033[1;32m║ [2] 100004 / 100004             ║\033[0m")
     print("\033[1;32m║ [3] CRACK 2009-2010 ACCOUNTS    ║\033[0m")
-    print("\033[1;32m║ [4] CRACK 2016-2017 ACCOUNTS    ║\033[0m")
+    print("\033[1;32m║ [4] CRACK 2015 Clon ACCOUNTS    ║\033[0m")
     print("\033[1;32m║ [0] BACK TO MAIN MENU           ║\033[0m")
     print("\033[1;32m╚══════════════════════════════════╝\033[0m")
     _input = choice = input(f"\x1b[38;5;196m➤\x1b[1;37m CHOICE {W}:{Y} \x1b[38;5;46m➤➤\x1b[0m ")
@@ -546,11 +546,11 @@ def old_Tree():
 
 def old_Four():
     """
-    Cloning method for accounts from 2016-2017.
+    Cloning method for accounts from 2015.
     """
     user = []
     ____banner____()
-    print(f"\x1b[38;5;196m➤ \x1b[1;37mOLD CODE\x1b[0m \x1b[38;5;46m{Y}:{G}\x1b[0m \x1b[38;5;244m2016 Account\x1b[0m")
+    print(f"\x1b[38;5;196m➤ \x1b[1;37mOLD CODE\x1b[0m \x1b[38;5;46m{Y}:{G}\x1b[0m \x1b[38;5;244m2015 Account\x1b[0m")
     ask = input(f"\x1b[38;5;196m➤\x1b[1;37m SELECT \x1b[0m\x1b[38;5;46m{Y}:{G}\x1b[0m ")
     linex()
     ____banner____()
@@ -558,9 +558,9 @@ def old_Four():
     print(f"\x1b[38;5;196m╰───────────────────────────────\x1b[0m")
     limit = input(f"\x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mTOTAL ID COUNT {Y}:{G} ")
     linex()
-    prefix = '10001'
+    prefix = '100009'
     for _ in range(int(limit)):
-        suffix = ''.join(random.choices('0123456789', k=10))
+        suffix = ''.join(random.choices('0123456789', k=9))
         uid = prefix + suffix
         user.append(uid)
     print("\x1b[38;5;82m┌── [ 1 ] ─────────────────────┐\x1b[0m")
@@ -572,7 +572,7 @@ def old_Four():
     print("\x1b[38;5;196m└──────────────────────────────┘\x1b[0m")
     linex()
     meth = input(f"       \x1b[38;5;196m(\x1b[1;37m★\x1b[38;5;196m)\x1b[1;37m>\x1b[38;5;196m×\x1b[1;37m<\x1b[38;5;46mCHOICE {W}(1/2): {Y}").strip().upper()
-    with tred(max_workers=30) as pool:
+    with tred(max_workers=16) as pool:
         ____banner____()
         print(f"\x1b[1;96m[★]➤ TOTAL IDS CRACK : \x1b[1;32m{limit:<10}\x1b[0m")
         print(f"\x1b[1;96m[★]➤ SELECTED        : \x1b[1;32mM1\x1b[0m")
